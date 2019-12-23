@@ -1,4 +1,4 @@
-# boilerplate-project-webpack-babel
+# boilerplate-project-webpack-typescript
 
 A thought out boilerplate project with a preconfigured sane options.
 
@@ -9,6 +9,7 @@ It includes:
 * Prettier
 * Autoprefixer
 * Jest
+* TypeScript
 
 ## License
 

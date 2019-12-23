@@ -9,16 +9,19 @@ const CONFIGS_DIR = path.resolve(__dirname, '../../configs');
 const config = {
   context: SRC_DIR,
   entry: {
-    app: './index.js',
+    app: './index.ts',
   },
   module: {
     rules: [
       {
-        test: /\.(js)$/,
+        test: /\.tsx?$/,
         include: [SRC_DIR],
-        loader: 'babel-loader',
+        use: ['babel-loader', 'ts-loader'],
       },
     ],
+  },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.json'],
   },
   optimization: {
     moduleIds: 'hashed',
