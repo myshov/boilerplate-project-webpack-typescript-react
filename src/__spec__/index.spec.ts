@@ -1,5 +1,5 @@
-const id = require('../index').default;
+import { identity } from '../index';
 
 it('returns passed argument', () => {
-  expect(id(1)).toBe(1);
+  expect(identity(1)).toBe(1);
 });

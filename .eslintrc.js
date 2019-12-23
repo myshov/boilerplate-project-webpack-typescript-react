@@ -29,6 +29,33 @@ module.exports = {
         'global-require': 'off',
       },
     },
+    {
+      files: ['src/**/*.ts'],
+      parser: '@typescript-eslint/parser',
+      extends: ['plugin:@typescript-eslint/recommended'],
+      rules: {
+        'import/extensions': [
+          'error',
+          'ignorePackages',
+          {
+            js: 'never',
+            jsx: 'never',
+            ts: 'never',
+            tsx: 'never',
+          },
+        ],
+      },
+      settings: {
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts', '.tsx'],
+        },
+        'import/resolver': {
+          typescript: {
+            directory: './src',
+          },
+        },
+      },
+    },
   ],
   root: true,
   noInlineConfig: true,
