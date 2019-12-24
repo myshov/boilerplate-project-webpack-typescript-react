@@ -21,7 +21,7 @@ const config = {
     ],
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.json'],
+    extensions: ['.wasm', '.mjs', '.ts', '.tsx', '.js', '.json'],
   },
   optimization: {
     moduleIds: 'hashed',
