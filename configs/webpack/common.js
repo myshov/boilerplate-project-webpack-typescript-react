@@ -9,7 +9,7 @@ const CONFIGS_DIR = path.resolve(__dirname, '../../configs');
 const config = {
   context: SRC_DIR,
   entry: {
-    app: './index.ts',
+    app: './index.tsx',
   },
   module: {
     rules: [

@@ -10,6 +10,7 @@ It includes:
 * Autoprefixer
 * Jest
 * TypeScript
+* React
 
 ## License
 

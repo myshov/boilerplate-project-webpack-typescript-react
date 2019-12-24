@@ -7,6 +7,7 @@ module.exports = {
     'airbnb-base',
     'plugin:prettier/recommended',
     'plugin:jest/recommended',
+    'plugin:react/recommended',
   ],
   globals: {
     Atomics: 'readonly',
@@ -30,7 +31,7 @@ module.exports = {
       },
     },
     {
-      files: ['src/**/*.ts'],
+      files: ['src/**/*.{ts,tsx}'],
       parser: '@typescript-eslint/parser',
       extends: ['plugin:@typescript-eslint/recommended'],
       rules: {
@@ -57,6 +58,11 @@ module.exports = {
       },
     },
   ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   root: true,
   noInlineConfig: true,
   reportUnusedDisableDirectives: true,

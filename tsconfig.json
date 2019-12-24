@@ -5,8 +5,11 @@
     "noImplicitAny": true,
     "sourceMap": true,
     "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
     "target": "es6",
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "jsx": "react"
   },
-  "include": ["./src/**/*.ts"]
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"]
 }
