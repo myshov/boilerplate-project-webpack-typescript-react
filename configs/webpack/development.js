@@ -15,6 +15,11 @@ module.exports = {
     publicPath: '/',
   },
   devtool: 'inline-source-map',
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom',
+    },
+  },
   module: {
     rules: [
       {

@@ -16,7 +16,7 @@ const config = {
       {
         test: /\.tsx?$/,
         include: [SRC_DIR],
-        use: ['babel-loader', 'ts-loader'],
+        use: ['babel-loader'],
       },
     ],
   },

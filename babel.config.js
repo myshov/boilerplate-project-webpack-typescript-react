@@ -7,10 +7,13 @@ module.exports = {
         corejs: 3,
       },
     ],
+    '@babel/preset-typescript',
+    '@babel/preset-react',
   ],
   plugins: [
     '@babel/plugin-transform-runtime',
     '@babel/plugin-syntax-dynamic-import',
+    'react-hot-loader/babel',
   ],
   // babel config for jest
   env: {
