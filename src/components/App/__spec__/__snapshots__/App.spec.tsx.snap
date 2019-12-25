@@ -2,7 +2,7 @@
 
 exports[`Component "App" should render correctly 1`] = `
 <div
-  className="App"
+  className="app"
 >
   <h1>
     App
