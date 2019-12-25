@@ -1,6 +1,7 @@
 const path = require('path');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 
+const PROJECT_DIR = path.resolve(__dirname, '../..');
 const DIST_DIR = path.resolve(__dirname, '../../dist');
 const SRC_DIR = path.resolve(__dirname, '../../src');
 const PUBLIC_DIR = path.resolve(__dirname, '../../public');
@@ -42,6 +43,7 @@ const config = {
 module.exports = {
   commonConfig: config,
   paths: {
+    PROJECT_DIR,
     SRC_DIR,
     DIST_DIR,
     PUBLIC_DIR,

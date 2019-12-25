@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const DotenvPlugin = require('dotenv-webpack');
 const AutoprefixerPlugin = require('autoprefixer');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 const { paths } = require('./common');
 
@@ -53,6 +54,11 @@ module.exports = {
     }),
     new DotenvPlugin({
       path: path.resolve(paths.CONFIGS_DIR, 'env/development.conf'),
+    }),
+    // This plugin is used instead of ts-loader, because
+    // react-hot-loader works only with babel
+    new ForkTsCheckerWebpackPlugin({
+      tsconfig: path.resolve(paths.PROJECT_DIR, 'tsconfig.json'),
     }),
   ],
   devServer: {
