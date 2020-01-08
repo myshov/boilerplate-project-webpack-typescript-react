@@ -3,7 +3,7 @@ import { hot } from 'react-hot-loader/root';
 
 import styles from './App.css';
 
-function App(): JSX.Element {
+function App() {
   return (
     <div className={styles.app}>
       <h1>App</h1>
